@@ -1,0 +1,48 @@
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: row; /* Sidebar and main content side by side */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+}
+
+.sidebar-header {
+  padding: 20px;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px 20px;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+}
+
+.sidebar-menu a:hover {
+  background-color: #555;
+}
+
+.sidebar-menu a.active {
+  background-color: #555;
+}
+
+.main {
+  flex: 1; /* Main content occupies remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Add scrollbar if content overflows */
+}
+
+ 

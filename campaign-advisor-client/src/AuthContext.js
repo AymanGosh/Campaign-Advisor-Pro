@@ -1,5 +1,5 @@
 // AuthContext.js
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 // Create AuthContext
 const AuthContext = createContext();
@@ -24,4 +24,10 @@ export const AuthProvider = ({ children }) => {
 };
 
 // Custom hook to consume AuthContext
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error("useAuth must be used within an AuthProvider");
+  }
+  return context;
+};

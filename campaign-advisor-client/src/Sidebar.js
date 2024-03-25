@@ -1,6 +1,6 @@
 // Sidebar.js
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -10,13 +10,16 @@ const Sidebar = () => {
       </div>
       <ul className="sidebar-menu">
         <li>
-          <NavLink to="/loaders" >Loaders</NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/actions" >Actions</NavLink>
+          <NavLink to="/loaders">Loaders</NavLink>
         </li>
         <li>
-          <NavLink to="/metrics" >Metrics</NavLink>
+          <NavLink to="/actions">Actions</NavLink>
+        </li>
+        <li>
+          <NavLink to="/metrics">Metrics</NavLink>
         </li>
       </ul>
     </div>
